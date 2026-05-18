@@ -6,17 +6,17 @@ Artificial Intelligence Engineer
 
 AI, robots, new media art.
 
-## Areas of Work
+## Skills
 
-- Artificial Intelligence
 - Machine learning and deep learning
 - Large Language Models (LLMs)
-- Multi-agent Systems
 - Retrieval-Augmented Generation (RAG)
-- Multimodal AI workflows
+- Multi-agent systems
+- Multimodal AI systems
+- Robotics
+- Generative art
+- New media art
 - Research-oriented prototyping
-- Generative Art
-- New Media Art
 
 ## Experience
 
@@ -24,39 +24,39 @@ AI, robots, new media art.
 
 _Artificial Intelligence Engineer, Berlin, 2024-Present_
 
-Development of RAG and multi-agent systems for cultural heritage, media, academia, and civil society.
+Developing RAG and multi-agent systems for cultural heritage, media, academia, and civil society.
 
-### Collective.ai
+### { collective.ai }
 
 _Founder, AI Engineer, Argentina, 2020-2024_
 
-Development of AI solutions for companies in the United States and Europe, using deep learning models, Transformers, and graph deep learning models.
+Developed AI solutions for companies in the United States and Europe, using deep learning models, transformers, and graph deep learning models.
 
 ### Smart Layers
 
 _Artificial Intelligence Engineer, France, 2020-2023_
 
-Development of deep learning models using graphs for entity extraction in documents, later moving to a Transformer-based solution.
+Developed graph deep learning models and transformers for entity extraction in documents.
 
 ### Worcket
 
 _Artificial Intelligence Engineer, Argentina, 2018-2020_
 
-Development of deep learning models to automate candidate selection processes and a graph-based recommendation system between candidates and recruiters.
+Developed deep learning models to automate candidate selection processes and a graph-based recommendation system between candidates and recruiters.
 
 ### Froneus
 
 _Artificial Intelligence Engineer, Argentina, 2018_
 
-Development of machine learning and deep learning models to automate voice bot flows.
+Developed machine learning and deep learning models to automate voice bot flows.
 
-## Artistic Projects
+## Artistic Work
 
 ### P.O.R. — Pop Oracle Robot
 
 _2025_
 
-Interactive experience through an Oracle Robot. Presented through multiple collaborations, including the 2026 exhibition [Material Interactions](https://materialinteractions.com/).
+Interactive experience through the Oracle Robot, combining AI, physical presence, and audience interaction. Presented in multiple collaborations, including the 2026 exhibition [Material Interactions](https://materialinteractions.com/).
 
 [Instagram reference](https://www.instagram.com/p/DW77RbbDDi7)
 
