@@ -3,11 +3,11 @@
 ## requirements
 
 ```bash
-sudo apt install chromium libproxy1v5
+make install-dependencies
 ```
 
 ## pdf
 
 ```bash
-chromium --headless --no-pdf-header-footer --print-to-pdf=portfolio.pdf index.html
+make html-to-pdf
 ```
