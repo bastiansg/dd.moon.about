@@ -1,5 +1,5 @@
-PDF = portfolio.pdf
 HTML = index.html
+PDF = dd.moon.pdf
 
 .PHONY: install-dependencies html-to-pdf
 
