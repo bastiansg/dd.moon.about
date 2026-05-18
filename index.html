@@ -55,9 +55,32 @@
 
       .hero {
         display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: end;
         gap: 10px;
         padding-bottom: 30px;
         border-bottom: 1px solid var(--border);
+      }
+
+      .hero-text {
+        display: grid;
+        gap: 10px;
+      }
+
+      .portrait {
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .portrait img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 62%;
       }
 
       h1,
@@ -178,6 +201,24 @@
         gap: 8px;
       }
 
+      .por-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 14px 0 2px;
+      }
+
+      .por-gallery img {
+        display: block;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .por-object {
+        object-position: center;
+      }
+
       .links {
         margin-top: 2px;
       }
@@ -213,26 +254,67 @@
         .page {
           padding-top: 34px;
         }
+
+        .hero {
+          grid-template-columns: 1fr;
+          align-items: start;
+        }
+
+        .portrait {
+          width: 100%;
+          height: 190px;
+          margin-top: 14px;
+        }
+
+      }
+
+      @media print {
+        @page {
+          size: 210mm 760mm;
+          margin: 0;
+        }
+
+        html,
+        body {
+          background: var(--background);
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+
+        .page {
+          width: 180mm;
+          padding: 18mm 0;
+        }
       }
     </style>
   </head>
   <body>
     <main class="page">
       <header class="hero">
-        <h1>dd.moon</h1>
-        <p class="tagline">Robots. New Media Art.</p>
-        <p class="legal-name">Bastián Andrés Silva Guajardo</p>
-        <p class="role">Artificial Intelligence Engineer</p>
+        <div class="hero-text">
+          <h1>dd.moon</h1>
+          <p class="tagline">Robots. New Media Art.</p>
+          <p class="legal-name">Bastián Andrés Silva Guajardo</p>
+          <p class="role">Artificial Intelligence Engineer</p>
+        </div>
+        <figure class="portrait">
+          <img src="bas-13-b.jpg" alt="dd.moon performing with a microphone" />
+        </figure>
       </header>
 
       <section class="section" aria-labelledby="art-title">
         <h2 id="art-title">[ artistic work ]</h2>
         <article class="project">
           <div class="item-header">
-            <h3>P.O.R. | Pop Oracle Robot</h3>
+            <h3>P.O.R. // Pop Oracle Robot</h3>
             <p class="meta">year :: 2025</p>
           </div>
           <p>Interactive experience with the Oracle Robot, combining AI, physical presence, and audience interaction. Shown in multiple collaborations, including the 2026 exhibition <a class="inline-link" href="https://materialinteractions.com/">Material Interactions</a>.</p>
+          <div class="por-gallery" aria-label="P.O.R. documentation images">
+            <img class="por-object" src="por-1536.jpg" alt="P.O.R. installation object with green light" />
+            <img src="por-ticket.jpg" alt="Printed documentation for P.O.R. at Material Interactions" />
+            <img src="por-photo.jpg" alt="Stage lights in a dark space" />
+          </div>
           <p class="links"><a class="reference-link" href="https://www.instagram.com/p/DW77RbbDDi7">[ documentation ]</a></p>
         </article>
       </section>
