@@ -1,12 +1,12 @@
 HTML = index.html
 PDF = dd.moon.pdf
 
-.PHONY: install-dependencies html-to-pdf
+.PHONY: setup html-to-pdf
 
-install-dependencies:
+setup:
 	sudo apt update
 	sudo apt install make chromium libproxy1v5
+	npm install
 
 html-to-pdf:
-	@sed -e 's|{{HTML}}|$(HTML)|g' -e 's|{{PDF}}|$(PDF)|g' banners/html-to-pdf.txt
-	chromium --headless --no-pdf-header-footer --print-to-pdf=$(PDF) $(HTML)
+	@node scripts/html-to-pdf.mjs $(HTML) $(PDF)

@@ -1,3 +1,0 @@
-[ html-to-pdf ]
-origin :: {{HTML}}
-target :: {{PDF}}
