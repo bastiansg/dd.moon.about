@@ -213,18 +213,32 @@
         gap: 8px;
       }
 
-      .por-gallery {
+      .project + .project {
+        margin-top: 24px;
+      }
+
+      .por-gallery,
+      .aann-gallery {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
         gap: 18px;
         margin: 14px 0 0;
       }
 
-      .por-gallery a {
+      .por-gallery {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .aann-gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .por-gallery a,
+      .aann-gallery a {
         display: block;
       }
 
-      .por-gallery img {
+      .por-gallery img,
+      .aann-gallery img {
         display: block;
         width: 100%;
         aspect-ratio: 1;
@@ -234,7 +248,9 @@
       }
 
       .por-gallery a:hover img,
-      .por-gallery a:focus-visible img {
+      .por-gallery a:focus-visible img,
+      .aann-gallery a:hover img,
+      .aann-gallery a:focus-visible img {
         opacity: 0.78;
       }
 
@@ -292,6 +308,10 @@
         }
 
         .por-gallery {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .aann-gallery {
           grid-template-columns: repeat(2, 1fr);
         }
 
@@ -353,6 +373,21 @@
           <p class="links">
             <span>[&ensp;code&ensp;]</span>
             <span>└─ <a class="reference-link" href="https://github.com/bastiansg/por" target="_blank" rel="noopener noreferrer">github.com/bastiansg/por</a></span>
+          </p>
+        </article>
+        <article class="project">
+          <div class="item-header">
+            <h3>AANN // Analog Artificial Neural Network</h3>
+            <p class="meta">year&nbsp;&nbsp;::&nbsp;&nbsp;2023</p>
+          </div>
+          <p>A physical neural network made visible with light. AANN learns to recognize pixel-art Space Invaders, translates its strongest learned connections into groups of optical fibers, and reveals each classification as light traveling through the object.</p>
+          <div class="aann-gallery" aria-label="AANN documentation images">
+            <a href="images/aann-space-invaders.jpg" target="_blank" rel="noopener noreferrer"><img src="images/aann-space-invaders.jpg" alt="Four pixel-art Space Invader classes used to train AANN" /></a>
+            <a href="images/aann-discretized-graph.jpg" target="_blank" rel="noopener noreferrer"><img src="images/aann-discretized-graph.jpg" alt="Discretized neural network graph used as AANN's physical optical-fiber map" /></a>
+          </div>
+          <p class="links">
+            <span>[&ensp;project&ensp;]</span>
+            <span>└─ <a class="reference-link" href="https://bastiansg.github.io/aann/" target="_blank" rel="noopener noreferrer">bastiansg.github.io/aann</a></span>
           </p>
         </article>
       </section>
